@@ -1,0 +1,17 @@
+# Cargo.toml
+[package]
+name = "async_tcp_logger"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# The industry-standard async engine with full multi-threading features
+tokio = { version = "1.38", features = ["full"] }
+
+# High-performance async file system and channel tools
+tokio-util = { version = "0.7", features = ["codec"] }
+bytes = "1.6"
+
+# Thread-safe logging macros
+tracing = "0.1"
+tracing-subscriber = "0.3"
